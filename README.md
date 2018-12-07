@@ -48,7 +48,7 @@ All contribution welcome :) Open an issue, submit a pull request, or contact me 
 
 ## Authors
 
-Clayton Crockett
+* [Clayton Crockett](https://github.com/claytoncrockett)
 
 
 ## License
