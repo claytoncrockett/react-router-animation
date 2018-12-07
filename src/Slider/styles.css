@@ -1,0 +1,39 @@
+.animatable {
+  background: inherit;
+  will-change: transform;
+  transition: transform 0.5s ease;
+}
+
+.animatable.prepare {
+  /*  do this so  can tell when the "preparing" was done
+     since there seems to be a browser bug where the preparation still takes
+     time, even with `transition: none;` */
+  transition-duration: 0.0000000000001s;
+  opacity: 0;
+}
+
+.animatable.prepare.from.left {
+  transform: translateX(-110%);
+}
+.animatable.prepare.from.right {
+  transform: translateX(110%);
+}
+.animatable.prepare.to.left {
+  transform: translateX(-1px);
+}
+.animatable.prepare.to.right {
+  transform: translateX(1px);
+}
+
+.animatable:not(.prepare).to {
+  pointer-events: none;
+}
+.animatable:not(.prepare).to.left {
+  transform: translateX(-110%);
+}
+.animatable:not(.prepare).to.right {
+  transform: translateX(110%);
+}
+.animatable:not(.prepare).from {
+  transform: translateX(0);
+}
