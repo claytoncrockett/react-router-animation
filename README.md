@@ -4,7 +4,7 @@
 * [Live Demo](https://codesandbox.io/s/82yno5o2j8)
 
 react-router-animation is a lightweight, simple component for adding a sliding animation transition when swapping between react-router components.
-*MUST* be using react-router-dom for this package to work.
+*MUST* be using [react-router](https://github.com/ReactTraining/react-router) for this package to work.
 
 ## Getting Started
 
